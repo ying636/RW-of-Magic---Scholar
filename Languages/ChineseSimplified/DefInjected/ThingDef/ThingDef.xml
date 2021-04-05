@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LanguageData>
+		<MF_Book_Crystal.label>法术：凝聚法晶</MF_Book_Crystal.label>
+        <MF_Book_Crystal.description>教会一位法师如何凝聚法晶。</MF_Book_Crystal.description>
+		
+		<MF_Book_Paper.label>法术：书写法识纸</MF_Book_Paper.label>
+        <MF_Book_Paper.description>教会一位法师如何书写法识纸。</MF_Book_Paper.description>	
+		
+		<MF_Paper.label>法识纸</MF_Paper.label>
+        <MF_Paper.description>一张记录了魔法知识的纸，阅读者可以从中获得魔法经验。</MF_Paper.description>	
+		
+		<MF_Crystal.label>法晶</MF_Crystal.label>
+        <MF_Crystal.description>一块法力结晶，当某个法师吸收它时会恢复一些法力，而且不会有副作用。</MF_Crystal.description>	
+	</LanguageData>

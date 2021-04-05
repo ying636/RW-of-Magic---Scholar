@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <ThingDef>
+    <defName>MF_Crystal</defName>
+    <label>mana crystal</label>
+    <!--法晶-->
+    <description>a crystal of mana,When it is absorbed, Absorber will rapidly recover mana,and there are no side effects.</description>
+	<!--一块法力结晶，当某个法师吸收它时会恢复一些法力，而且不会有副作用。-->
+    <graphicData>
+      <texPath>MF_crystal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+	<thingCategories>
+      <li>TM_MagicItems</li>
+    </thingCategories>
+    <techLevel>Archotech</techLevel>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>-10</Beauty>
+      <WorkToMake>1000</WorkToMake>
+      <MarketValue>300</MarketValue>
+      <Mass>0</Mass>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0</overdoseSeverityOffset>
+      </li>
+    </comps>
+    <pathCost>15</pathCost>
+    <burnableByRecipe>true</burnableByRecipe>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <drugCategory>Medical</drugCategory>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>TM_Mana</need>
+          <offset>0.3</offset>
+        </li>
+      </outcomeDoers>
+      <foodType>Processed</foodType>
+      <baseIngestTicks>60</baseIngestTicks>
+      <chairSearchRadius>0</chairSearchRadius>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Absorb {0}</ingestCommandString>
+      <ingestReportString>Absorb {0}.</ingestReportString>
+    </ingestible>
+  </ThingDef>
+
+ <ThingDef>
+    <defName>MF_SpecialCrystal</defName>
+    <label>strange mana Crystal</label>
+    <description>a strange crystal of mana,When it is absorbed, Absorber will massive rapidly recover mana,and there are no side effects.</description>
+    <graphicData>
+      <texPath>MF_SpecialCrystal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+  	<thingCategories>
+      <li>TM_MagicItems</li>
+    </thingCategories>
+    <techLevel>Archotech</techLevel>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>-10</Beauty>
+      <WorkToMake>1000</WorkToMake>
+      <MarketValue>300</MarketValue>
+      <Mass>0</Mass>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Drug">
+        <listOrder>1000</listOrder>
+        <overdoseSeverityOffset>0</overdoseSeverityOffset>
+      </li>
+    </comps>
+    <pathCost>15</pathCost>
+    <burnableByRecipe>true</burnableByRecipe>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+      <drugCategory>Medical</drugCategory>
+	  <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>TM_Mana</need>
+          <offset>0.5</offset>
+        </li>
+      </outcomeDoers>
+      <foodType>Processed</foodType>
+      <baseIngestTicks>60</baseIngestTicks>
+      <chairSearchRadius>0</chairSearchRadius>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Absorb {0}</ingestCommandString>
+      <ingestReportString>Absorb {0}.</ingestReportString>
+    </ingestible>
+  </ThingDef>
+
+
+
+
+ <ThingDef>
+    <defName>MF_Paper</defName>
+    <label>magic theories paper</label>
+	<!--法识纸-->
+    <description>A piece of paper that records the magic theories, from which readers can gain arcane experience.</description>
+	<!--一张记录了魔法知识的纸，阅读者可以从中获得魔法经验。-->
+    <graphicData>
+      <texPath>MF_Paper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <techLevel>Archotech</techLevel>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>-10</Beauty>
+      <WorkToMake>1000</WorkToMake>
+      <MarketValue>300</MarketValue>
+      <Mass>0</Mass>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+	  <li Class="CompProperties_Usable">
+        <useJob>UseArtifact</useJob>
+        <useLabel>Read</useLabel>
+        <useDuration>45</useDuration>
+      </li>
+	 <li Class="CompProperties_UseEffect">
+        <compClass>MF_DLL.UseEffect</compClass>
+      </li>
+    </comps>
+    <pathCost>15</pathCost>
+    <burnableByRecipe>true</burnableByRecipe>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+  </ThingDef>
+  
+   <ThingDef>
+    <defName>MF_excellent_Paper</defName>
+    <label>excellent magic theories paper</label>
+	<!--精良法识纸-->
+    <description>A piece of paper that records the magic theories, from which readers can gain arcane experience.</description>
+	<!--一张记录了魔法知识的纸，阅读者可以从中获得魔法经验。-->
+    <graphicData>
+      <texPath>MF_Paper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <techLevel>Archotech</techLevel>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <rotatable>false</rotatable>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>-10</Beauty>
+      <WorkToMake>1000</WorkToMake>
+      <MarketValue>300</MarketValue>
+      <Mass>0</Mass>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+	  <li Class="CompProperties_Usable">
+        <useJob>UseArtifact</useJob>
+        <useLabel>Read</useLabel>
+        <useDuration>45</useDuration>
+      </li>
+	 <li Class="CompProperties_UseEffect">
+        <compClass>MF_DLL.UseEffect2</compClass>
+      </li>
+    </comps>
+    <pathCost>15</pathCost>
+    <burnableByRecipe>true</burnableByRecipe>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+  </ThingDef>
+  
+  </Defs>

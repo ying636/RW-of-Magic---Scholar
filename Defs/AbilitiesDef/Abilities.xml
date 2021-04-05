@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+     <!--法晶-->
+   
+  <ThingDef ParentName="ArcaneSpellBase">
+    <defName>MF_Book_Crystal</defName>
+    <label>Mage Spell:Condensed Crystal</label>
+    <thingClass>ThingWithComps</thingClass>
+    <description>Teaches a magic user how to Condensed Crystal.</description>
+	<category>Item</category>
+	<selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+	<alwaysHaulable>true</alwaysHaulable>	
+	<resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <tradeNeverStack>true</tradeNeverStack>
+    <useHitPoints>true</useHitPoints>
+	<statBases>
+      <MarketValue>1200</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+	<rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Books/scroll_lit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  
+  
+  
+ <TorannMagic.TMAbilityDef ParentName="BaseMagicAbility">
+    <defName>MF_CondensedCrystal</defName>
+    <label>condense Crystal</label>
+    <description>condense a crystal of mana,When it is absorbed, Absorber will rapidly recover mana,and there are no side effects.</description>
+	<uiIconPath>MF_Abilities/MF_Crystal</uiIconPath>
+    <manaCost>0.50</manaCost>
+	<efficiencyReductionPercent>.05</efficiencyReductionPercent>
+	<learnItem>MF_Book_Crystal</learnItem>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>true</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MF_Projectile_SpawnCrystal</defaultProjectile>
+		<abilityDef>MF_CondensedCrystal</abilityDef>
+        <warmupTime>0</warmupTime>
+        <SecondsToRecharge>15</SecondsToRecharge>
+        <range>10</range>
+        <soundCast>MeleeHit_Metal_Sharp</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+		<isViolent>true</isViolent>
+		<burstShotCount>1</burstShotCount>
+		<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+		<targetParams>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetLocations>true</canTargetLocations>
+		</targetParams>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+  
+	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>MF_CondensedCrystal</defName>	
+		<customPower>	
+			<forMage>true</forMage>
+			<abilityDefs>									
+				<li>MF_CondensedCrystal</li>					
+			</abilityDefs>
+			<skills>
+				<li>										
+					<label>MF_CondensedCrystal_pwr</label>
+					<description>MF_CondensedCrystal_pwr_description</description>
+					<levelMax>3</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+				<li>										
+					<label>MF_CondensedCrystal_ver</label>
+					<description>MF_CondensedCrystal_ver_description</description>
+					<levelMax>3</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+				<li>
+					<label>MF_CondensedCrystal_eff</label>
+					<description>MF_CondensedCrystal_eff_description</description>
+					<levelMax>3</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+					<costToLevel>2</costToLevel>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+	
+	<!--法识纸-->
+	
+	<ThingDef ParentName="ArcaneSpellBase">
+    <defName>MF_Book_Paper</defName>
+    <label>Mage Spell:write magic theories paper</label>
+    <thingClass>ThingWithComps</thingClass>
+    <description>Teaches a magic user how to write a magic theories paper.</description>
+	<category>Item</category>
+	<selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+	<alwaysHaulable>true</alwaysHaulable>	
+	<resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <tradeNeverStack>true</tradeNeverStack>
+    <useHitPoints>true</useHitPoints>
+	<statBases>
+      <MarketValue>1200</MarketValue>
+	</statBases>
+	<comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+	<rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Books/scroll_lit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  
+  
+  
+ <TorannMagic.TMAbilityDef ParentName="BaseMagicAbility">
+    <defName>MF_WMTP</defName>
+    <label>write magic theories paper</label>
+	<efficiencyReductionPercent>.05</efficiencyReductionPercent>
+    <description>write a magic theories paper,A piece of paper that records the magic theories, from which readers can gain arcane experience.</description>
+	<uiIconPath>MF_Abilities/MF_Paper</uiIconPath>
+    <manaCost>0.2</manaCost>
+	<learnItem>MF_Book_Paper</learnItem>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>true</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MF_Projectile_WMTP</defaultProjectile>
+		<abilityDef>MF_WMTP</abilityDef>
+        <warmupTime>0</warmupTime>
+        <SecondsToRecharge>15</SecondsToRecharge>
+        <range>10</range>
+        <soundCast>MeleeHit_Metal_Sharp</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+		<isViolent>true</isViolent>
+		<burstShotCount>1</burstShotCount>
+		<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+		<targetParams>
+			<canTargetPawns>false</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetLocations>true</canTargetLocations>
+		</targetParams>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+  
+	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>MF_WMTP</defName>	
+		<customPower>	
+			<forMage>true</forMage>
+			<abilityDefs>									
+				<li>MF_WMTP</li>					
+			</abilityDefs>
+			<skills>
+				<li>										
+					<label>MF_WMTP_pwr</label>
+					<description>MF_WMTP_pwr_description</description>
+					<levelMax>3</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+				<li>										
+					<label>MF_WMTP_ver</label>
+					<description>MF_WMTP_ver_description</description>
+					<levelMax>3</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+				<li>
+					<label>MF_WMTP_eff</label>
+					<description>MF_WMTP_eff_description</description>
+					<levelMax>3</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+					<costToLevel>2</costToLevel>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+	
+  </Defs>

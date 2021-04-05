@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>RW of Magic---Scholar</name>
+	<author>22</author>
+		    <packageId>22.MF</packageId>
+	<supportedVersions>
+      <li>1.2</li>
+	</supportedVersions>
+	<description>A class expansion pack for Rimworld of Magic，
+	2 new abilities
+	1 new class
+	4 new thing
+	--NEED A MAGIC OF RIMWORLD MOD--
+	abilities:
+	condense Crystal：condense a crystal of mana,When it is absorbed, Absorber will rapidly recover mana,and there are no side effects.
+	write magic theories paper：write a magic theories paper,A piece of paper that records the magic theories, from which readers can gain arcane experience.
+	class：Scholar：Scholar dedicat to learning and studying all kinds of magic.
+	</description>
+</ModMetaData>

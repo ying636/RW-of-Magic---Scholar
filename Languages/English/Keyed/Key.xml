@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LanguageData>
+	<MF_CondensedCrystal_pwr>chaos</MF_CondensedCrystal_pwr>
+	<MF_CondensedCrystal_pwr_description>I level：25% chance to Condense strange mana Crystal
+	                                     II level：50% chance to Condense strange mana Crystal
+	                                     III level：75% chance to Condense strange mana Crystal</MF_CondensedCrystal_pwr_description>
+	
+	<MF_CondensedCrystal_ver>order</MF_CondensedCrystal_ver>
+	<MF_CondensedCrystal_ver_description>I level：quantity of Condense+1
+                                         II level：quantity of Condense+1
+	                                     III level：quantity of Condense+1</MF_CondensedCrystal_ver_description>	
+	
+	<MF_CondensedCrystal_eff>proficient</MF_CondensedCrystal_eff>
+	<MF_CondensedCrystal_eff_description>Decreases the mana cost of abilities by an additional 5% per level.</MF_CondensedCrystal_eff_description>	
+	
+	
+	
+	<MF_WMTP_pwr>Erudite</MF_WMTP_pwr>
+	<MF_WMTP_pwr_description>I level：50% chance to write excellent magic theories paper\nII level：75% chance to write excellent magic theories paper\nIII level：100% chance to write excellent magic theories paper</MF_WMTP_pwr_description>
+	
+	<MF_WMTP_ver>inspiration</MF_WMTP_ver>
+	<MF_WMTP_ver_description>I level：quantity of write paper+1\nII level：quantity of write paper+1\nIII level：quantity of write paper+1</MF_WMTP_ver_description>	
+	
+	<MF_WMTP_eff>practised</MF_WMTP_eff>
+	<MF_WMTP_eff_description>Decreases the mana cost of abilities by an additional 5% per level.</MF_WMTP_eff_description>	
+
+	</LanguageData>

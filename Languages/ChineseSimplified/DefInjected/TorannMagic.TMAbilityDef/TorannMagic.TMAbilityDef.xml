@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LanguageData>
+		
+		<MF_CondensedCrystal.label>凝聚法晶</MF_CondensedCrystal.label>
+        <MF_CondensedCrystal.description>凝聚一块法力结晶，当某个法师吸收它时会恢复一些法力，而且不会有副作用。</MF_CondensedCrystal.description>	
+		
+		<MF_WMTP.label>书写法识纸</MF_WMTP.label>
+        <MF_WMTP.description>书写一张记录了魔法知识的纸，阅读者可以从中获得魔法经验。</MF_WMTP.description>	
+
+	</LanguageData>

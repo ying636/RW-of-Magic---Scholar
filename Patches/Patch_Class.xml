@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/TorannMagic.TM_CustomClassDef[defName = "TM_CustomClasses"]/customClasses</xpath>
+	<value>		
+		  <!-- Custom Class - the Wayfarer -->
+		  <li>
+			<classTrait>MF_Scholar</classTrait>			
+			<traitDegree>4</traitDegree>					
+			<classHediff></classHediff>							
+			<classTexturePath>wayfarerFlame</classTexturePath>
+			<classIconPath>CustomFlame</classIconPath>		
+			<classIconColor>(1,0.09,0.39)</classIconColor>		
+			<tornScript></tornScript>					
+			<fullScript></fullScript>			
+			
+			<classMageAbilities>	
+            <li>MF_CondensedCrystal</li>	
+            <li>MF_WMTP</li>	
+            <li>TM_Cantrips</li>	
+			<li>TM_WandererCraft</li>	
+			</classMageAbilities>
+			<learnableSpells>								
+			</learnableSpells>								
+			
+			<classFighterAbilities>							
+			</classFighterAbilities>
+			<learnableSkills>								
+			</learnableSkills>
+			
+			<isMage>true</isMage>							
+			<isFighter>false</isFighter>						
+            <maxMageLevel>300</maxMageLevel>       					
+									
+			<isNecromancer>false</isNecromancer>			
+			<isUndead>false</isUndead>						
+															
+			<isAndroid>false</isAndroid>					
+			<isAdvancedClass>false</isAdvancedClass>		
+		  </li>
+	</value>
+  </Operation>
+</Patch>

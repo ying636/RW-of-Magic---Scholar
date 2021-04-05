@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LanguageData>
+	<MF_CondensedCrystal_pwr>混乱</MF_CondensedCrystal_pwr>
+	<MF_CondensedCrystal_pwr_description>I级：25%几率使凝聚出特殊的结晶
+	                                     II级：50%几率
+	                                     III级：75%几率</MF_CondensedCrystal_pwr_description>
+	
+	<MF_CondensedCrystal_ver>秩序</MF_CondensedCrystal_ver>
+	<MF_CondensedCrystal_ver_description>I级：凝聚数量+1
+                                         II级：凝聚数量+1
+	                                     III级：凝聚数量+1</MF_CondensedCrystal_ver_description>	
+	
+	<MF_CondensedCrystal_eff>精通</MF_CondensedCrystal_eff>
+	<MF_CondensedCrystal_eff_description>每技能等级降低凝聚法晶消耗5%</MF_CondensedCrystal_eff_description>	
+	
+	
+	
+	<MF_WMTP_pwr>博学</MF_WMTP_pwr>
+	<MF_WMTP_pwr_description>I级：50%几率使书写出高质量的法识纸\nII级：75几率\nIII级：100%几率</MF_WMTP_pwr_description>
+	
+	<MF_WMTP_ver>灵感</MF_WMTP_ver>
+	<MF_WMTP_ver_description>I级：书写数量+1\nII级：书写数量+1\nIII级：书写数量+1</MF_WMTP_ver_description>	
+	
+	<MF_WMTP_eff>熟练</MF_WMTP_eff>
+	<MF_WMTP_eff_description>每技能等级降低写出法识纸消耗5%</MF_WMTP_eff_description>	
+
+	</LanguageData>

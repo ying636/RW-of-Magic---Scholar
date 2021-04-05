@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LanguageData>
+		<MF_Scholar.degreeDatas.0.label>&lt;color=#CC66FF>&lt;b>学者&lt;/b>&lt;/color></MF_Scholar.degreeDatas.0.label>
+		<MF_Scholar.degreeDatas.0.description>[PAWN_nameDef]是一位学者，[PAWN_pronoun]致力于学习和研究各种魔法。</MF_Scholar.degreeDatas.0.description>
+	</LanguageData>
